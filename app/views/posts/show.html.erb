@@ -1,0 +1,33 @@
+
+<main>
+  <div class="main_area">
+    <div class="chat_box_show">
+      <div class="comments_label">
+        <div class="com_lab_count"><%= @post.answers.count %></div>
+        <div class="com_lab_text">comments</div>
+      </div>
+      <div class="question_area">
+        <div class="que_head">
+          <div class="que_head_title"><%=@post.title%></div>
+          <div class="que_head_name"><%=@post.name%></div>
+        </div>
+        <div class="que_main_all"><%=@post.content%></div>
+      </div>
+    </div>
+    <%= form_with(model: [@post, @answer], local: true) do |answer| %>
+      <div class="answer_form">
+        <%= answer.text_field :name, placeholder: "ユーザー名", class:"ans_for_name"%>
+        <div class="median_line"></div>
+        <%= answer.text_area :answer, placeholder: "回答する", class:"ans_for_text"%>
+      </div>
+      <%= answer.submit "SEND", class:"ans_for_btn"%>
+    <% end %>
+    <% @answers.each do |answer| %>
+      <div class="ansewr_box">
+        <div class="ans_box_name"><%= answer.name %></div>
+        <div class="median_line"></div>
+        <div class="ans_box_text"><%= answer.answer %></div>
+      </div>
+    <% end %>
+  </div>
+</main>

@@ -1,0 +1,20 @@
+<main>
+  <div class="main_area">
+    <% @posts.each do |post|%>
+    <div class="chat_box">
+      <div class="comments_label">
+        <div class="com_lab_count"><%= post.answers.count %></div>
+        <div class="com_lab_text">comments</div>
+      </div>
+      <div class="question_area">
+        <div class="que_head">
+          <%# <div class="que_head_title">タイトル：<%=  post.title %>
+          <%= link_to post.title , post_path(post.id) ,class:"que_head_title" %>
+          <div class="que_head_name"><%= post.name %></div>
+        </div>
+        <div class="que_main"><%= post.content%></div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</main>

@@ -1,0 +1,16 @@
+<main>
+  <div class="form_area">
+    <div class="form_head">
+    </div>
+    <div class="form_back">
+      <div class="post_form">
+      <%= form_with(model: @post, local: true) do |post| %>
+        <%= post.text_field :title, placeholder: "タイトル", class:"pos_for_title" %><br>
+        <%= post.text_area :content, placeholder: "質問内容", class:"pos_for_content" %><br>
+        <%= post.text_field :name, placeholder: "投稿者名", class:"pos_for_name" %><br>
+        <%= post.submit "POST", class:"pos_for_post" %>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</main>

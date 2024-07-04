@@ -1,0 +1,269 @@
+/******************************************** 
+ リセット用
+*********************************************/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------------------------------------------------
+      基本構造
+-------------------------------------------------------------------- */
+
+*{
+  color: #000000;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  padding: 0 20px;
+  background-color: #1C3667;
+}
+
+main{
+  overflow: auto;
+  height: calc(100vh - 65px);
+  width: 100%;
+  background-color: #F2F2F3;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------
+      header
+-------------------------------------------------------------------- */
+
+.head_title{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  font-weight: 100;
+  letter-spacing: 1.8px;
+  color: #FFFFFF;
+}
+
+.head_btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  color: #3A3736;
+}
+
+/* --------------------------------------------------------------------
+      main/index
+-------------------------------------------------------------------- */
+
+.main_area{
+  width: 700px;
+  padding-top: 90px;
+  margin: 0 auto;
+}
+
+.chat_box{
+  display: flex;
+  height: 125px;
+  padding-bottom: 25px;
+}
+
+.comments_label{
+  text-align: center;
+  width: 70px;
+  padding-top: 20px;
+  border-radius: 5px 0 0 5px;
+  background-color: #1C3667;
+}
+
+.question_area{
+  width: 630px;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  background-color: #FFFFFF;
+}
+
+.com_lab_count{
+  height: 38px;
+  font-size: 26px;
+  color: #FFFFFF;
+}
+
+.com_lab_text{
+  height: 16px;
+  font-size:11px;
+  color: #FFFFFF;
+}
+
+.que_head{
+  display: flex;
+  justify-content: space-between;
+}
+
+.que_head_title{
+  width: 500px;
+  font-size: 14px;
+}
+
+.que_head_name{
+  font-size: 12px;
+}
+
+.que_main{
+  overflow: hidden;
+  height: 54px;
+  padding-top: 15px;
+  font-size: 12px;
+}
+
+/* --------------------------------------------------------------------
+      main/new
+-------------------------------------------------------------------- */
+
+.form_area{
+  width: 700px;
+  padding-top: 80px;
+  margin: 0 auto;
+}
+
+.form_head{
+  height: 45px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  background-color: #1C3667;
+}
+
+.form_back{
+  margin: auto;
+  border-radius: 0 0 5px 5px;
+  background-color: #FFFFFF;
+}
+
+.post_form{
+  padding: 40px 0;
+  margin: 0 auto;
+  width: 520px;
+}
+
+.pos_for_title{
+  height: 36px;
+  width: 100%;
+}
+
+.pos_for_content{
+  height: 126px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.pos_for_name{
+  height: 36px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.pos_for_post{
+  height: 38px;
+  width: 100%;
+  border: none;
+  margin-top: 20px;
+  background-color: #1C3667;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------------------------
+      main/show
+-------------------------------------------------------------------- */
+
+.chat_box_show{
+  display: flex;
+  height: 100%;
+  padding-bottom: 25px;
+}
+
+.que_main_all{
+  padding-top: 15px;
+  font-size: 12px;
+}
+
+.answer_form{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 25px;
+  border-top: 2px solid #1C3667;
+}
+
+.ans_for_name{
+  display: block;
+  height: 36px;
+  width: 130px;
+}
+
+.median_line{
+  height: 100%;
+  width: 1px;
+  background-color: #1C3667;
+}
+
+.ans_for_text{
+  display: block;
+  height: 108px;
+  width: 550px;
+  padding: 5px;
+  font-size:14px;
+}
+
+.ans_for_btn{
+  display: block;
+  height: 36px;
+  width: 20%;
+  border: none;
+  margin: 25px auto;
+  background-color: #1C3667;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.ansewr_box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+.ans_box_name{
+  width: 130px;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  background-color: #1C3667;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.ans_box_text{
+  width: 550px;
+  padding: 5px;
+  margin: auto 0;
+  font-size: 11px;
+}
